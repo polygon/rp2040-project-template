@@ -1,4 +1,4 @@
-# Project template for rp2040-hal
+# Project template for rp2040-hal with Nix support
 
 This template is intended as a starting point for developing your own firmware based on the rp2040-hal.
 
@@ -16,6 +16,7 @@ If you aren't using a debugger (or want to use other debugging configurations), 
   
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
+	  <li><a href="#nix-flakes-support">Nix flakes support</a></li>
     <li><a href="#markdown-header-requirements">Requirements</a></li>
     <li><a href="#installation-of-development-dependencies">Installation of development dependencies</a></li>
     <li><a href="#running">Running</a></li>
@@ -30,10 +31,14 @@ If you aren't using a debugger (or want to use other debugging configurations), 
   </ol>
 </details>
 
+  
+## Nix flakes support
+
+`flake.nix` provides a development environment with the rust toolchain and can be spawned with `nix develop .`. An `.envrc` file is provided for `direnv` users. You will need https://github.com/nix-community/nix-direnv for proper Nix support. Inside the environment, you can use `cargo` as usual.
+
 <!-- Requirements -->
 <details open="open">
   <summary><h2 style="display: inline-block" id="requirements">Requirements</h2></summary>
-  
 - The standard Rust tooling (cargo, rustup) which you can install from https://rustup.rs/
 
 - Toolchain support for the cortex-m0+ processors in the rp2040 (thumbv6m-none-eabi)
