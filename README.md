@@ -38,6 +38,8 @@ If you aren't using a debugger (or want to use other debugging configurations), 
 
 `flake.nix` provides a development environment with the rust toolchain and can be spawned with `nix develop .`. An `.envrc` file is provided for `direnv` users. You will need https://github.com/nix-community/nix-direnv for proper Nix support. Inside the environment, you can use `cargo` as usual.
 
+There is a `shell.nix` shim provided if you don't use flakes.
+
 <!-- Requirements -->
 <details open="open">
   <summary><h2 style="display: inline-block" id="requirements">Requirements</h2></summary>
