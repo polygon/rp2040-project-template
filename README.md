@@ -1,3 +1,5 @@
+**This is a fork of the rp2040-project-template (https://github.com/rp-rs/rp2040-project-template) that adds a Nix flake for easier usage with the Nix package manager. It might be outdated**
+
 # Project template for rp2040-hal with Nix support
 
 This template is intended as a starting point for developing your own firmware based on the rp2040-hal.
