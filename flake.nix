@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = github:NixOS/nixpkgs;
+    nixpkgs.url = "github:NixOS/nixpkgs";
     rust-overlay.url = "github:oxalica/rust-overlay";
   };
 
@@ -22,7 +22,7 @@
           }))
           pkgs.rust-analyzer
           pkgs.flip-link
-          pkgs.probe-run
+          pkgs.probe-rs
           self.packages.x86_64-linux.elf2uf2-rs
           pkgs.rustfmt
         ];
